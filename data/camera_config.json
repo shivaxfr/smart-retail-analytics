@@ -1,0 +1,40 @@
+{
+    "CAM_1": {
+        "mode": "browsing",
+        "tripwire": false,
+        "zones": [
+            {
+                "zone_id": "skincare",
+                "polygon": [[0, 200], [900, 200], [900, 650], [0, 650]]
+            },
+            {
+                "zone_id": "makeup",
+                "polygon": [[920, 200], [1920, 200], [1920, 650], [920, 650]]
+            }
+        ],
+        "description": "Browsing aisles shelf camera tracking SKU zones"
+    },
+    "CAM_2": {
+        "mode": "entrance",
+        "tripwire": true,
+        "line_pct": 0.58,
+        "description": "Main store entrance camera 1 with crossing tripwire"
+    },
+    "CAM_3": {
+        "mode": "entrance",
+        "tripwire": true,
+        "line_pct": 0.53,
+        "description": "Main store entrance camera 2 with crossing tripwire"
+    },
+    "CAM_4": {
+        "mode": "backoffice",
+        "tripwire": false,
+        "description": "Backoffice camera for staff tracking only (emits no customer events)"
+    },
+    "CAM_5": {
+        "mode": "billing",
+        "tripwire": false,
+        "polygon": [[1200, 700], [1920, 700], [1920, 1080], [1200, 1080]],
+        "description": "Billing counter checkout zone camera"
+    }
+}
